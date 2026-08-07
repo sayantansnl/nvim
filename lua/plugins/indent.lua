@@ -4,10 +4,13 @@ return {
 	event = "BufReadPost",
 	opts = {
 		indent = {
-			char = "┊",
+			char = "│",
 		},
 		scope = {
-			enabled = true,
+			enabled = false,
+		},
+		whitespace = {
+			remove_blankline_trail = true,
 		},
 	},
 }
