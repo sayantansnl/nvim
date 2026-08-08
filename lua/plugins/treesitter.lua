@@ -8,7 +8,7 @@ return {
 			pattern = {
 				"go",
 				"lua",
-				"python",
+				"py",
 				"rs",
 				"ts",
 				"js",
