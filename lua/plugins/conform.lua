@@ -15,7 +15,6 @@ return {
 			yaml = { "prettier" },
 			markdown = { "prettier" },
 			lua = { "stylua" },
-			python = { "ruff_format" },
 			rust = { "rustfmt" },
 		},
 

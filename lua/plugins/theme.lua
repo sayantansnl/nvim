@@ -1,14 +1,13 @@
 return {
-	"folke/tokyonight.nvim",
+	"shatur/neovim-ayu",
 	priority = 1000,
 	lazy = false,
 	opts = {},
 	config = function()
-		require("tokyonight").setup({
-			styles = {
-				keywords = { italic = false },
-			},
+		require("ayu").setup({
+			mirage = true,
+			terminal = true,
 		})
-		vim.cmd([[colorscheme tokyonight-moon]])
+		vim.cmd([[colorscheme ayu-mirage]])
 	end,
 }

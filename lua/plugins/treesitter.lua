@@ -3,7 +3,7 @@ return {
 	lazy = false,
 	build = ":TSUpdate",
 	opts = {
-		ensure_installed = { "html", "tsx", "typescript", "javascript", "jsx", "go", "python", "rust" },
+		ensure_installed = { "html", "tsx", "typescript", "javascript", "jsx", "go", "rust" },
 		highlight = { enable = true },
 	},
 
@@ -12,7 +12,6 @@ return {
 			pattern = {
 				"*.go",
 				"*.lua",
-				"*.py",
 				"*.rs",
 				"*.ts",
 				"*.js",
