@@ -1,5 +1,9 @@
 vim.diagnostic.config({
-	virtual_text = true,
+	virtual_text = false,
+	virtual_lines = {
+		current_line = true,
+		overflow = "wrap",
+	},
 	signs = true,
 	underline = true,
 	update_in_insert = true,
