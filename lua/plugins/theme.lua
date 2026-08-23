@@ -1,27 +1,16 @@
 return {
-	"catppuccin/nvim",
+	"rose-pine/neovim",
 	priority = 1000,
 	lazy = false,
-	opts = {},
 	config = function()
-		require("catppuccin").setup({
-			flavour = "auto",
-			styles = { -- Handles the styles of general hi groups (see `:h highlight-args`):
-				comments = { "italic" }, -- Change the style of comments
-				conditionals = {},
-				loops = {},
-				functions = {},
-				keywords = {},
-				strings = {},
-				variables = {},
-				numbers = {},
-				booleans = {},
-				properties = {},
-				types = {},
-				operators = {},
-				-- miscs = {}, -- Uncomment to turn off hard-coded styles
+		require("rose-pine").setup({
+			variant = "moon",
+			styles = {
+				bold = true,
+				italic = false,
+				transparency = false,
 			},
 		})
-		vim.cmd([[colorscheme catppuccin-macchiato]])
+		vim.cmd([[colorscheme rose-pine]])
 	end,
 }
