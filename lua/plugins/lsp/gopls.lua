@@ -1,7 +1,7 @@
 vim.lsp.config("gopls", {
 	settings = {
 		gopls = {
-			semanticTokens = false,
+			semanticTokens = true,
 			completeUnimported = true,
 			usePlaceholders = true,
 			analyses = {

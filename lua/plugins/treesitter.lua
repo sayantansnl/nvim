@@ -1,25 +1,15 @@
 return {
 	"nvim-treesitter/nvim-treesitter",
+	branch = "main",
 	lazy = false,
 	build = ":TSUpdate",
-	opts = {
-		ensure_installed = { "html", "tsx", "typescript", "javascript", "jsx", "go", "rust" },
-		highlight = { enable = true },
-	},
-
 	config = function()
+		require("nvim-treesitter").setup({
+			ensure_installed = { "html", "tsx", "typescript", "javascript", "jsx", "go", "rust", "odin", "lua", "css" },
+		})
+
 		vim.api.nvim_create_autocmd("FileType", {
-			pattern = {
-				"*.go",
-				"*.lua",
-				"*.rs",
-				"*.ts",
-				"*.js",
-				"*.tsx",
-				"*.jsx",
-				"*.html",
-				"*.css",
-			},
+			pattern = { "html", "tsx", "typescript", "javascript", "jsx", "go", "rust", "odin", "lua", "css" },
 			callback = function()
 				vim.treesitter.start()
 			end,
