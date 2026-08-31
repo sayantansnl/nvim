@@ -8,7 +8,7 @@ return {
 			char = "│",
 		},
 		scope = {
-			enabled = false,
+			enabled = true,
 		},
 		whitespace = {
 			remove_blankline_trail = true,
