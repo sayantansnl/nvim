@@ -1,18 +1,16 @@
 return {
-	"EdenEast/nightfox.nvim",
+	"folke/tokyonight.nvim",
 	priority = 1000,
 	lazy = false,
 	config = function()
-		require("nightfox").setup({
+		require("tokyonight").setup({
 			styles = {
-				comments = "italic",
-				functions = "bold",
-				keywords = "bold",
-				types = "NONE",
-				variables = "NONE",
-				constants = "NONE",
+				functions = { italic = false },
+				keywords = { italic = false },
+				comments = { italic = true },
 			},
+			transparent = false,
 		})
-		vim.cmd([[colorscheme duskfox]])
+		vim.cmd([[colorscheme tokyonight-moon]])
 	end,
 }

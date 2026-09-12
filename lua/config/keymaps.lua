@@ -29,3 +29,5 @@ vim.keymap.set("n", "<leader>h", function()
 end, {
 	desc = "Open terminal horizontally",
 })
+
+vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "LSP Go to definition" })
