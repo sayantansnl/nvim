@@ -6,5 +6,6 @@ return {
 		require("plugins.lsp.tailwindcss")
 		require("plugins.lsp.rust_analyzer")
 		require("plugins.lsp.ols")
+		require("plugins.lsp.svelte")
 	end,
 }

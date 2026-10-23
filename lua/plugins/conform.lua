@@ -17,6 +17,7 @@ return {
 				json = { "prettier" },
 				yaml = { "prettier" },
 				markdown = { "prettier" },
+				svelte = js,
 				lua = { "stylua" },
 				rust = { "rustfmt" },
 				odin = { "odinfmt" },

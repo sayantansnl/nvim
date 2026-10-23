@@ -1,6 +1,6 @@
 return {
 	"windwp/nvim-ts-autotag",
-	ft = { "javascriptreact", "typescriptreact" },
+	ft = { "javascriptreact", "typescriptreact", "svelte" },
 	opts = {
 		opts = {
 			enable_close = true, -- auto close tags

@@ -12,6 +12,7 @@ syntax highlighting, formatting, diagnostics, Git integration, filetree, etc. wi
   - Go
   - Rust
   - Odin
+  - Svelte
 - **Treesitter** syntax highlighting
 - **Autocompletion**
 - **LSP diagnostics**
