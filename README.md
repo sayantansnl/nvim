@@ -13,6 +13,8 @@ syntax highlighting, formatting, diagnostics, Git integration, filetree, etc. wi
   - Rust
   - Odin
   - Svelte
+  - Docker
+
 - **Treesitter** syntax highlighting
 - **Autocompletion**
 - **LSP diagnostics**
