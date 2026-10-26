@@ -4,10 +4,11 @@ return {
 
 	opts = function()
 		local js = { "eslint_d", "prettier" }
+		local go = { "goimports", "gofumpt", "goimports-reviser" }
 
 		return {
 			formatters_by_ft = {
-				go = { "goimports", "gofumpt" },
+				go = go,
 				javascript = js,
 				javascriptreact = js,
 				typescript = js,
